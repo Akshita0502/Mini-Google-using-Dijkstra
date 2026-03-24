@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mini Google Maps</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Mini Google Maps</h1>
+<p>Visualizing how map algorithms find the shortest path</p>
+</header>
+
+<div class="container">
+
+<div class="left">
+
+
+<div class="graph-area" id="graph">
+
+<div class="line l1"></div>
+<div class="line l2"></div>
+<div class="line l3"></div>
+<div class="line l4"></div>
+<div class="line l5"></div>
+<div class="line l6"></div>
+<div class="line l7"></div>
+
+
+<div class="node house" id="House">🏠</div>
+<div class="node mall" id="Mall">🏬</div>
+<div class="node hospital" id="Hospital">🏥</div>
+<div class="node park" id="Park">🏞️</div>
+<div class="node college" id="College">🏫</div>
+
+<div class="edge e1">3</div>
+<div class="edge e2">4</div>
+<div class="edge e3">2</div>
+<div class="edge e4">5</div>
+<div class="edge e5">3</div>
+<div class="edge e6">2</div>
+<div class="edge e7">3</div>
+
+</div>
+
+<div class="controls">
+
+<div class="dropdowns">
+<label>Start</label>
+<select id="start">
+<option value="House">House</option>
+<option value="Mall">Mall</option>
+<option value="Hospital">Hospital</option>
+<option value="College">College</option>
+<option value="Park">Park</option>
+</select>
+
+<label>Destination</label>
+<select id="end">
+<option value="House">House</option>
+<option value="Mall">Mall</option>
+<option value="Hospital">Hospital</option>
+<option value="College">College</option>
+<option value="Park">Park</option>
+</select>
+
+</div>
+
+<button id="findPath">Find Shortest Path</button>
+
+</div>
+
+</div>
+
+
+<div class="right">
+
+<h2>Algorithm Steps</h2>
+
+<div id="steps">
+
+<p>Steps will appear here...</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

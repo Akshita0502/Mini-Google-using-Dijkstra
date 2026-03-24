@@ -1,0 +1,183 @@
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(135deg,#4e4a6a,#6d5f74);
+color:white;
+}
+
+header{
+padding:20px;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+}
+
+.container{
+display:flex;
+height:85vh;
+}
+
+.left{
+width:70%;
+display:flex;
+flex-direction:column;
+}
+
+.graph-area{
+flex:1;
+border:2px solid rgba(255,255,255,0.2);
+margin:20px;
+border-radius:10px;
+position:relative;
+}
+
+.controls{
+background:rgba(255,255,255,0.2);
+padding:30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.dropdowns{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+select{
+padding:8px;
+border-radius:6px;
+border:none;
+}
+
+button{
+padding:15px 40px;
+font-size:18px;
+border:none;
+border-radius:8px;
+background:white;
+cursor:pointer;
+}
+
+.right{
+width:30%;
+background:rgba(255,255,255,0.2);
+padding:20px;
+}
+
+#steps{
+margin-top:20px;
+line-height:1.8;
+}
+
+.node{
+position:absolute;
+font-size:50px;
+}
+
+.house{
+left:120px;
+top:120px;
+}
+
+.mall{
+left:380px;
+top:40px;
+}
+
+.hospital{
+right:120px;
+top:120px;
+}
+
+.park{
+left:500px;
+top:285px;
+}
+
+.college{
+left:260px;
+bottom: 50px;
+}
+
+.edge{
+position:absolute;
+color:white;
+font-weight:bold;
+}
+
+.e1{ left:250px; top:90px; }
+.e2{ right:350px; top:110px; }
+.e3{ left:440px; top:160px; }
+.e4{ left:300px; top:200px; }
+.e5{ left:450px; bottom:50px; }
+.e6{ left:180px; top:220px; }
+.e7{ left:730px; bottom:140px;}
+
+.line{
+position:absolute;
+height:3px;
+background:white;
+transform-origin:left;
+}
+
+.l1{
+width:260px;
+left:170px;
+top:150px;
+transform:rotate(-20deg);
+}
+
+.l2{
+width:400px;
+right:160px;
+top:90px;
+transform:rotate(11deg);
+}
+
+.l3{
+width:230px;
+left:430px;
+top:95px;
+transform:rotate(62deg);
+}
+
+.l4{
+width:400px;
+left:160px;
+top:170px;
+transform:rotate(22deg);
+}
+
+.l5{
+width:220px;
+left:310px;
+bottom:70px;
+transform:rotate(0deg);
+}
+
+.l6{
+width:200px;
+left:160px;
+top:170px;
+transform:rotate(50deg);
+}
+
+.l7{
+width:320px;
+left:550px;
+bottom:70px;
+transform:rotate(-31deg);
+}
+
+.highlight{
+background: yellow;
+color: black;
+border-radius: 50%;
+padding: 5px;
+transform: scale(1.4);
+transition: 0.3s;
+}
